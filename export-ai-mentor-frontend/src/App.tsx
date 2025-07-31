@@ -1,17 +1,19 @@
-import { useState } from 'react'
 import './App.css'
 import { MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css';
-function App() {
-  const [] = useState(0)
+import HomePage from './Pages/HomePage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+function App() {
   return (
      <MantineProvider>
-   <h1 className="text-5xl text-amber-600 font-bold underline">
-    Welcome To Our Project !!
-  </h1>
+      <BrowserRouter>
+      <Routes>
+        <Route path='*' element={<HomePage/>}/>
+      </Routes>
+        <HomePage/>
+      </BrowserRouter>
     </MantineProvider>
-  )
+  );
 }
-
-export default App
+export default App;
