@@ -20,7 +20,7 @@ return <div className="w-full bg-slate-950 h-28 p-6 text-cyan-50 flex justify-be
             <IconSettings stroke={1.5}/>   
         </div>
         <div className="bg-slate-800 p-1.5 rounded-full">
-           <Indicator color="white" offset={6} size={8} processing>
+           <Indicator color="blue" offset={6} size={8} processing>
             <IconBell stroke={1.5}/>
             </Indicator>
         </div>
