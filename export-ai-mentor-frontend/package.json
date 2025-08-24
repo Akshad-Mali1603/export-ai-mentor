@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
+    "@mantine/carousel": "^8.2.7",
     "@mantine/core": "^8.2.2",
     "@mantine/hooks": "^8.2.2",
     "@tabler/icons-react": "^3.34.1",
     "@tailwindcss/vite": "^4.1.11",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.1"
