@@ -7,10 +7,10 @@ const DisplayPage = () => {
         <div className="text-lg text-slate-800 font-bold">AI-powered export platform for new traders</div>
         <div className="flex items-center">
           <div className="flex items-center h-18 w-45">
-            <button className="bg-slate-950 shadow-2xl shadow-slate-950 text-slate-50 h-15 w-35 rounded-2xl p-2 hover:bg-slate-700">Get Started</button>
+            <button className="hover:translate-y-2 transition duration-300 ease-in-out bg-slate-950 shadow-2xl shadow-slate-950 text-slate-50 h-15 w-35 rounded-2xl p-2 hover:bg-slate-700">Get Started</button>
           </div>
           <div className="flex items-center h-18 w-50">
-            <button className="bg-slate-50 shadow-2xl shadow-slate-950 backdrop-blur-md text-slate-950 h-15 w-35 rounded-2xl p-2 hover:bg-slate-200">View Demo</button>
+            <button className="hover:translate-y-2 transition duration-300 ease-in-out bg-slate-50 shadow-2xl shadow-slate-950 backdrop-blur-md text-slate-950 h-15 w-35 rounded-2xl p-2 hover:bg-slate-200">View Demo</button>
           </div>
         </div>
       </div>

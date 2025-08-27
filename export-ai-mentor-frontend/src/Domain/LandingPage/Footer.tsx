@@ -1,5 +1,5 @@
 import { IconBrandInstagram, IconBrandLinkedinFilled, IconBrandTwitterFilled, IconBrandYoutubeFilled } from "@tabler/icons-react";
-import NavLinks from "./Header/NavLinks";
+import NavLinks from "../Header/NavLinks";
 
 const Footer = () => {
     return (
@@ -9,14 +9,14 @@ const Footer = () => {
                     <div className="font-light text-2xl pt-3 text-slate-500">Get started today and transform your export business</div>
                 </div>
                 <div className="w-[30%] items-center justify-center pt-10">
-                    <button className="bg-slate-50 shadow-2xl shadow-slate-950 backdrop-blur-md text-slate-950 h-15 w-50 rounded-lg p-2 hover:bg-slate-200">Start Now - It's Free</button>
+                    <button className="hover:translate-x-3 transition duration-300 ease-in-out bg-slate-50 shadow-2xl shadow-slate-950 backdrop-blur-md text-slate-950 h-15 w-50 rounded-lg p-2 hover:bg-slate-200">Start Now - It's Free</button>
                 </div>
             </div>
             <div className=" bg-slate-950 text-slate-50 flex">
                 <div className="w-[40%] p-15 flex-col pr-30">
                     <div className="text-2xl ">ExportMentor.AI</div>
                     <div className="pt-5 text-slate-400 hover:text-slate-50">Empowering businesses to succeed in global trade with AI-powered solutions.</div>
-                    <div className="pt-5 text-slate-400 hover:text-slate-50">© 2025 ExportMentor.AI. All rights reserved.</div>
+                    <div className="pt-5 text-slate-400 hover:text-slate-50">© 2025 Export AI Mentor All rights reserved.</div>
                 </div>
                 <div className="w-[35%] pt-15 pb-15 flex-col">
                     <div className="mx-40 pb-6">Quick Links</div>
