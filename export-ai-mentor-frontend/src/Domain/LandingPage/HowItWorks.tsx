@@ -28,7 +28,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <div className="w-full py-10 bg-slate-50">
+    <div id="about" className="w-full py-10 bg-slate-50">
       <h2 className="text-4xl font-bold items-center place-self-center pb-25 pt-10">
         How ExportMentor.AI Works
       </h2>

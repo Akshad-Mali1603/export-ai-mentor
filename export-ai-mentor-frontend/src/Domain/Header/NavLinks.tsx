@@ -44,7 +44,7 @@ const NavLinks = () => {
 
 
 
-  return( <div className="flex gap-5 items-center h-full text-slate-300">
+  return( <div className="flex gap-20 items-center h-full text-slate-300">
     {Links.map((link, index) =>(
       <Link onClick={()=>scrollToSection(link.identity)} className={`${location.pathname == link.url
       ? "border-slate-50 text-slate-50 border-b-2 "
