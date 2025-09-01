@@ -27,7 +27,7 @@ const OurStory = () => {
             <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 text-center mb-10">Leadership</h2>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-12 max-w-4xl mx-auto">
               {/* Akshad Mali Card */}
-              <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 w-full md:w-1/2 lg:w-96 text-center transition-transform hover:scale-105 duration-300 ease-in-out">
+              <div className="bg-white border border-gray-200 rounded-lg shadow-xl shadow-slate-400 p-6 w-full md:w-1/2 lg:w-96 text-center transition-transform hover:scale-105 duration-300 ease-in-out">
                 <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                   <svg className="w-16 h-16 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
@@ -54,7 +54,7 @@ const OurStory = () => {
               </div>
 
               {/* Saloni Tomar Card */}
-              <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 w-full md:w-1/2 lg:w-96 text-center transition-transform hover:scale-105 duration-300 ease-in-out">
+              <div className="bg-white border border-gray-200 rounded-lg shadow-xl shadow-slate-400 p-6 w-full md:w-1/2 lg:w-96 text-center transition-transform hover:scale-105 duration-300 ease-in-out">
                 <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                   <svg className="w-16 h-16 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>

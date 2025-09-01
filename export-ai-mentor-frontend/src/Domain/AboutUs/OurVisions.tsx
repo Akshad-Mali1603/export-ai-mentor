@@ -8,7 +8,7 @@ interface ValueCardProps {
 
 const ValueCard: React.FC<ValueCardProps> = ({ icon, title, description }) => {
   return (
-    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transform hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out">
       <div className="mb-4 text-4xl text-gray-700">{icon}</div>
       <h3 className="mb-2 text-xl font-semibold text-gray-800">{title}</h3>
       <p className="text-center text-gray-600 text-base leading-relaxed">{description}</p>
@@ -24,17 +24,17 @@ const OurValues: React.FC = () => {
 
         <div className="grid gap-8 md:grid-cols-3">
           <ValueCard
-            icon={<span>💡</span>} // Placeholder for innovation icon
+            icon={<span role="img" aria-label="Innovation">💡</span>}
             title="Innovation"
             description="We constantly push the boundaries of what's possible in trade technology, developing solutions that anticipate and address the evolving needs of exporters."
           />
           <ValueCard
-            icon={<span>🤝</span>} // Placeholder for accessibility icon
+            icon={<span role="img" aria-label="Accessibility">🤝</span>}
             title="Accessibility"
             description="We believe global trade should be accessible to all businesses, regardless of size or experience. Our platform democratizes export knowledge and tools."
           />
           <ValueCard
-            icon={<span>🛡️</span>} // Placeholder for integrity icon
+            icon={<span role="img" aria-label="Integrity">🛡️</span>}
             title="Integrity"
             description="We uphold the highest standards of accuracy and ethics in our data and recommendations, ensuring businesses can trust our platform for critical trade decisions."
           />
