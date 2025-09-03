@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/buyer-verification")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class BuyerVerificationController {
     private final BuyerVerificationService buyerVerificationService;
 
-    @PostMapping
+    @PostMapping("/buyer-verification")
     public ResponseEntity<BuyerVerificationResponse> verify(@RequestBody BuyerRequest req) {
         return ResponseEntity.ok(buyerVerificationService.verifyBuyer(req));
     }
