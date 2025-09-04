@@ -5,9 +5,7 @@ import '@mantine/carousel/styles.css';
 import HomePage from './Domain/Pages/HomePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BuyerVerificationPage from './Domain/Pages/BuyerVerificationPage';
-import AboutUs from './Domain/Pages/AboutUs';
-
-
+import AboutUs from './Domain/Pages/aboutUs';
 
 
 function App() {

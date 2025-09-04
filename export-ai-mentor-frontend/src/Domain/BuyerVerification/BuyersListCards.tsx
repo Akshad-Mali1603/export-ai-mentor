@@ -1,4 +1,4 @@
-import { Card, Group, Progress, Select } from "@mantine/core";
+import { Card, Group, Progress} from "@mantine/core";
 import { IconBookmark, IconBrandLinkedinFilled, IconCheck, IconExclamationCircleFilled, IconFileInvoice, IconFlag2Filled, IconHeadset, IconInfoTriangleFilled, IconMailFilled, IconMessageChatbot, IconShip, IconUserPlus, IconWorld } from "@tabler/icons-react";
 
 const BuyersListCards = () => {
