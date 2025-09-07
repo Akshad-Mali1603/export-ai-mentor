@@ -5,6 +5,8 @@ import '@mantine/carousel/styles.css';
 import HomePage from './Domain/Pages/HomePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BuyerVerificationPage from './Domain/Pages/BuyerVerificationPage';
+import AboutUs from './Domain/Pages/aboutUs';
+import AuthenticationPage from './Domain/Pages/AuthenticationPage';
 
 
 
@@ -34,6 +36,9 @@ function App() {
           <Route path='*' element={<HomePage />} />
           <Route path='/modules' element={<HomePage />} />
           <Route path='/modules/BuyerVerificationPage' element={<BuyerVerificationPage />} />
+          <Route path='/about' element={<AboutUs/>} />
+          <Route path='/home' element={<HomePage />} />
+          <Route path='/auth' element={<AuthenticationPage />} />
         </Routes>
 
       </BrowserRouter>
