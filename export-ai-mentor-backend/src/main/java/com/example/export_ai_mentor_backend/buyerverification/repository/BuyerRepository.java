@@ -1,8 +1,13 @@
 package com.example.export_ai_mentor_backend.buyerverification.repository;
 
-import com.example.export_ai_mentor_backend.buyerverification.entity.BuyerEntity;
+import com.example.export_ai_mentor_backend.buyerverification.model.BuyerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface BuyerRepository extends JpaRepository<BuyerEntity, Long> {
+import java.util.Optional;
 
+@Repository
+public interface BuyerRepository extends JpaRepository <BuyerEntity, Long > {
+
+    Optional<BuyerEntity> findByCompanyNameAndWebsiteUrlAndEmailAndCountry(String companyName, String websiteUrl, String email, String country);
 }
