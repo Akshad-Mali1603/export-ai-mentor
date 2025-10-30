@@ -1,5 +1,5 @@
 import { Box,  Button,  Text,  Paper,  Group,  ActionIcon,  Divider,} from '@mantine/core';
-import {  IconCheck,  IconPrinter,  IconDownload,  IconMail,  IconFileDescription,  IconFileTypePdf,  IconFileTypeDocx,} from '@tabler/icons-react';
+import {  IconCheck,  IconPrinter,  IconDownload,  IconMail,  IconFileDescription } from '@tabler/icons-react';
 
 function DocumentPreview() {
   return (
@@ -7,8 +7,8 @@ function DocumentPreview() {
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl">
         {/* Left Panel: Generate & Share */}
         <div className="flex-1">
-          <Text className="text-xl font-semibold mb-6">
-            Step 3: Generate & Share
+          <Text className="text-4xl font-bold pb-3">
+            Step 3 :  Generate & Share
           </Text>
 
           <Paper withBorder p="lg" className="shadow-sm">
@@ -30,7 +30,7 @@ function DocumentPreview() {
 
               <Text size="sm" className="ml-7 mt-1 text-gray-600">
                 Sent to buyer:{' '}
-                <span className="font-medium text-blue-600">
+                <span className="font-medium text-gray-600">
                   trade@buyercompany.com
                 </span>
               </Text>
@@ -42,13 +42,13 @@ function DocumentPreview() {
               <Group gap="md" className="mt-4 ml-7">
                 <Button
                   variant="subtle"
-                  className="text-blue-600 hover:underline px-0"
+                  className="text-gray-600 hover:underline px-0"
                 >
                   Generate Another Document
                 </Button>
                 <Button
                   variant="subtle"
-                  className="text-blue-600 hover:underline px-0"
+                  className="text-gray-600 hover:underline px-0"
                 >
                   Go to Dashboard
                 </Button>
@@ -85,7 +85,7 @@ function DocumentPreview() {
               </div>
             </Box>
 
-            <Group justify="center" gap="xl" className="mt-6">
+            {/* <Group justify="center" gap="xl" className="mt-6">
               <Button variant="light" leftSection={<IconFileTypePdf size={20} />}>
                 Download as PDF
               </Button>
@@ -95,7 +95,7 @@ function DocumentPreview() {
               <Button variant="light" leftSection={<IconMail size={20} />}>
                 Email to Buyer
               </Button>
-            </Group>
+            </Group> */}
           </Paper>
         </div>
       </div>
