@@ -27,7 +27,7 @@ const ExploreModules = () => {
                     <div className="font-semibold flex">Buyer Verification</div>
                     <div className="flex">Verify and validate potential buyers</div>
                 </button>
-                <button className="flex flex-col bg-slate-50 shadow-2xl shadow-slate-500 backdrop-blur-md text-slate-950 h-45 w-120 rounded-2xl px-8 pt-5 hover:bg-slate-200 transition">
+                <button className="flex flex-col bg-slate-50 shadow-2xl shadow-slate-500 backdrop-blur-md text-slate-950 h-45 w-120 rounded-2xl px-8 pt-5 hover:bg-slate-200 transition" onClick={() => navigate("/modules/SmartDocsPage")}>
                     <div className="flex w-16 h-16 rounded-full justify-center bg-slate-300 mb-3">
                         <IconFileCertificate width={50} height={50} />
                     </div>

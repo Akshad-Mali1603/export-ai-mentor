@@ -2,11 +2,12 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavLinks = () => {
   const Links = [
+    
     { name: "Home", url: "/home", identity:"home" },
     { name: "Modules", url: "/modules", identity:"modules" },
     { name: "About Us", url: "/about", identity:"about" },
     { name: "Contact", url: "/contact", identity:"contact" },
-    { name: "Authentication", url: "/auth", identity:"auth" },
+    { name: "SmartDocs", url: "/modules/SmartDocsPage", identity:"SmartDocs" }
   ];
   const location=useLocation();
 
