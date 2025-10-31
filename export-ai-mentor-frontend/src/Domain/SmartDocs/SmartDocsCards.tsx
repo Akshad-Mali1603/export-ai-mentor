@@ -33,7 +33,7 @@ const SmartDocsCards = ({ setSelectedDoc }: SmartDocsCardsProps) => {
       </div>
 
       {/* Step Title */}
-      <div className="text-4xl font-bold pb-3">Step 1: Select Document Type</div>
+      <div className="text-4xl font-bold pb-3">Step 1 :  Select Document Type</div>
 
       {/* Cards Section */}
       <div className="items-center justify-center p-4">

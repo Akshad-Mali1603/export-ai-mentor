@@ -1,5 +1,5 @@
 import { Box,  Button,  Text,  Paper,  Group,  ActionIcon,  Divider,} from '@mantine/core';
-import {  IconCheck,  IconPrinter,  IconDownload,  IconMail,  IconFileDescription } from '@tabler/icons-react';
+import {  IconCheck,  IconPrinter,  IconDownload,  IconMail,  IconFileDescription, IconFileTypeDocx, IconFileTypePdf } from '@tabler/icons-react';
 
 function DocumentPreview() {
   return (
@@ -7,9 +7,9 @@ function DocumentPreview() {
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl">
         {/* Left Panel: Generate & Share */}
         <div className="flex-1">
-          <Text className="text-4xl font-bold pb-3">
+          <div className="text-4xl font-bold pb-5">
             Step 3 :  Generate & Share
-          </Text>
+          </div>
 
           <Paper withBorder p="lg" className="shadow-sm">
             <Button
@@ -61,7 +61,7 @@ function DocumentPreview() {
         <div className="flex-1 max-w-xl">
           <Paper withBorder p="lg" className="shadow-sm flex flex-col h-full">
             <Group justify="space-between" align="center" className="mb-4">
-              <Text className="text-lg font-medium">Document Preview</Text>
+              <Text className="text-lg font-lg">Document Preview</Text>
 
               <Group gap="xs">
                 <ActionIcon variant="light" size="lg" aria-label="Print">
@@ -85,7 +85,7 @@ function DocumentPreview() {
               </div>
             </Box>
 
-            {/* <Group justify="center" gap="xl" className="mt-6">
+            <Group justify="center" gap="xl" className="mt-6">
               <Button variant="light" leftSection={<IconFileTypePdf size={20} />}>
                 Download as PDF
               </Button>
@@ -95,7 +95,7 @@ function DocumentPreview() {
               <Button variant="light" leftSection={<IconMail size={20} />}>
                 Email to Buyer
               </Button>
-            </Group> */}
+            </Group>
           </Paper>
         </div>
       </div>
