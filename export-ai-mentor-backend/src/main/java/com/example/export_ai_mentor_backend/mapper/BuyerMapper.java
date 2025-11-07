@@ -1,7 +1,7 @@
-package com.example.export_ai_mentor_backend.buyerverification.mapper;
+package com.example.export_ai_mentor_backend.mapper;
 
-import com.example.export_ai_mentor_backend.buyerverification.dto.BuyerDto;
-import com.example.export_ai_mentor_backend.buyerverification.model.BuyerEntity;
+import com.example.export_ai_mentor_backend.dto.BuyerDto;
+import com.example.export_ai_mentor_backend.model.BuyerEntity;
 
 
 public class BuyerMapper {

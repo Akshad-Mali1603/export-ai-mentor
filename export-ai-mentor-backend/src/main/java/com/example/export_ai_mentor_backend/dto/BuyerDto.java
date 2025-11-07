@@ -1,4 +1,4 @@
-package com.example.export_ai_mentor_backend.buyerverification.dto;
+package com.example.export_ai_mentor_backend.dto;
 
 import lombok.*;
 

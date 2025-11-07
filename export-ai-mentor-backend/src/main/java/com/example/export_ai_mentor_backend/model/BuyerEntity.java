@@ -1,4 +1,4 @@
-package com.example.export_ai_mentor_backend.buyerverification.model;
+package com.example.export_ai_mentor_backend.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

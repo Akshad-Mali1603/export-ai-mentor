@@ -1,6 +1,6 @@
-package com.example.export_ai_mentor_backend.buyerverification.repository;
+package com.example.export_ai_mentor_backend.repository;
 
-import com.example.export_ai_mentor_backend.buyerverification.model.BuyerEntity;
+import com.example.export_ai_mentor_backend.model.BuyerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
