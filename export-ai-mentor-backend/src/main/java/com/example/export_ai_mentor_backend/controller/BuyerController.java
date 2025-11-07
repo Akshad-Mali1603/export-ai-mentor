@@ -1,7 +1,7 @@
-package com.example.export_ai_mentor_backend.buyerverification.controller;
+package com.example.export_ai_mentor_backend.controller;
 
-import com.example.export_ai_mentor_backend.buyerverification.dto.BuyerDto;
-import com.example.export_ai_mentor_backend.buyerverification.service.BuyerService;
+import com.example.export_ai_mentor_backend.dto.BuyerDto;
+import com.example.export_ai_mentor_backend.service.BuyerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

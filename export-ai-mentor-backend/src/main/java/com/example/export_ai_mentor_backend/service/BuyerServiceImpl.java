@@ -1,9 +1,9 @@
-package com.example.export_ai_mentor_backend.buyerverification.service;
+package com.example.export_ai_mentor_backend.service;
 
-import com.example.export_ai_mentor_backend.buyerverification.dto.BuyerDto;
-import com.example.export_ai_mentor_backend.buyerverification.mapper.BuyerMapper;
-import com.example.export_ai_mentor_backend.buyerverification.model.BuyerEntity;
-import com.example.export_ai_mentor_backend.buyerverification.repository.BuyerRepository;
+import com.example.export_ai_mentor_backend.dto.BuyerDto;
+import com.example.export_ai_mentor_backend.mapper.BuyerMapper;
+import com.example.export_ai_mentor_backend.model.BuyerEntity;
+import com.example.export_ai_mentor_backend.repository.BuyerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
