@@ -16,7 +16,7 @@
     "@mantine/hooks": "^8.2.2",
     "@tabler/icons-react": "^3.34.1",
     "@tailwindcss/vite": "^4.1.11",
-    "axios": "^1.12.2",
+    "axios": "^1.13.2",
     "embla-carousel": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
