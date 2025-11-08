@@ -1,5 +1,6 @@
 package com.example.export_ai_mentor_backend.service;
 
+import com.example.export_ai_mentor_backend.dto.LoginDTO;
 import com.example.export_ai_mentor_backend.dto.UserDTO;
 import com.example.export_ai_mentor_backend.exportAiMentorException.ExportAiMentorException;
 import com.example.export_ai_mentor_backend.model.User;
@@ -29,5 +30,12 @@ public class UserServiceImpl implements UserService{
         user=userRepository.save(user);
         return user.toDTO();
 
+    }
+
+    @Override
+    public UserDTO loginUser(LoginDTO loginDTO) throws ExportAiMentorException {
+        User user = userRepository.findByEmail(loginDTO.getEmail()).orElseThrow(()->new ExportAiMentorException("USER_NOT_FOUND"));
+        if (!passwordEncoder.matches(loginDTO.getPassword(), user.getPassword()))throw new ExportAiMentorException("INVALID_CREDENTIALS");
+        return user.toDTO();
     }
 }

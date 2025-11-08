@@ -1,5 +1,6 @@
 package com.example.export_ai_mentor_backend.controller;
 
+import com.example.export_ai_mentor_backend.dto.LoginDTO;
 import com.example.export_ai_mentor_backend.dto.UserDTO;
 import com.example.export_ai_mentor_backend.exportAiMentorException.ExportAiMentorException;
 import com.example.export_ai_mentor_backend.service.UserService;
@@ -25,5 +26,11 @@ public class UserApi {
         return new ResponseEntity<>(userDTO, HttpStatus.CREATED);
     }
 
+
+    @PostMapping("/login")
+    public ResponseEntity<UserDTO>loginUser(@RequestBody @Valid LoginDTO loginDTO) throws ExportAiMentorException {
+
+        return new ResponseEntity<>(userService.loginUser(loginDTO), HttpStatus.OK);
+    }
 
 }
