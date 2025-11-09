@@ -1,6 +1,7 @@
 import { Avatar, Indicator } from "@mantine/core";
 import { IconBell, IconSettings } from "@tabler/icons-react";
 import NavLinks from "./NavLinks";
+import ProfileMenu from "./ProfileMenu";
 
 
 const Header = () => {
@@ -14,10 +15,7 @@ const Header = () => {
             </div>
 
             <div className="flex gap-3 items-center">
-                <div className="gap-3 flex items-center">
-                    <div>Akshad Mali</div>
-                    <Avatar src="avatar.png" />
-                </div>
+                <ProfileMenu/>
                 <div className="bg-slate-800 p-1.5 rounded-full">
                     <IconSettings stroke={1.5} />
                 </div>
