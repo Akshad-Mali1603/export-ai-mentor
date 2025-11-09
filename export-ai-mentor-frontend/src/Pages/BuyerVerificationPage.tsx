@@ -1,8 +1,8 @@
 import { useState } from "react";
-import BuyersListCards from "../BuyerVerification/BuyersListCards";
-import BuyerVerificationFrom from "../BuyerVerification/BuyerVerificationFrom";
-import Header from "../Header/Header";
-import Footer from "../LandingPage/Footer";
+import BuyersListCards from "../Components/BuyerVerification/BuyersListCards";
+import BuyerVerificationFrom from "../Components/BuyerVerification/BuyerVerificationFrom";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/LandingPage/Footer";
 
 const BuyerVerificationPage = () => {
 const[buyer, setBuyer] =  useState<any | null>(null);

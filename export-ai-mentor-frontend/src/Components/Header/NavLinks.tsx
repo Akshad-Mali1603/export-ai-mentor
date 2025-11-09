@@ -5,7 +5,8 @@ const NavLinks = () => {
     { name: "Home", url: "/home", identity:"home" },
     { name: "Modules", url: "/modules", identity:"modules" },
     { name: "About Us", url: "/about", identity:"about" },
-    { name: "Contact", url: "/contact", identity:"contact" }
+    { name: "Contact", url: "/contact", identity:"contact" },
+    { name: "SignUp", url: "/signup", identity:"signup" }
   ];
   const location=useLocation();
 
