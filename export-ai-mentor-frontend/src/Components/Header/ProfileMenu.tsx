@@ -23,10 +23,10 @@ const ProfileMenu = () => {
             </Menu.Target>
 
             <Menu.Dropdown onChange={()=>setOpened(true)}>
-                <Link to="/profile"/>
+                <Link to="/profile">
                 <Menu.Item leftSection={<IconUserCircle size={14} />}>
                     Profile
-                </Menu.Item>
+                </Menu.Item></Link>
                 <Menu.Item leftSection={<IconMessageCircle size={14} />}>
                     Messages
                 </Menu.Item>
