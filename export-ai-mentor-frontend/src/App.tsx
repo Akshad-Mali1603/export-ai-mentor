@@ -3,7 +3,13 @@ import { createTheme, MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import BuyerVerificationPage from './Domain/Pages/BuyerVerificationPage';
+import HomePage from './Pages/HomePage';
+import BuyerVerificationPage from './Pages/BuyerVerificationPage';
+import SmartDocsPage from './Pages/SmartDocsPage';
+import SignUp from './Components/SignUpLogIn/SignUp';
+import SignUpPage from './Pages/SignUpPage';
+import AboutUs from './Pages/aboutUs';
+
 
 
 
@@ -33,6 +39,13 @@ function App() {
           <Route path='*' element={<HomePage />} />
           <Route path='/modules' element={<HomePage />} />
           <Route path='/modules/BuyerVerificationPage' element={<BuyerVerificationPage />} />
+          <Route path='/modules/SmartDocsPage' element={<SmartDocsPage />} />
+          <Route path='/home' element={<HomePage />} />
+          <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/about' element={<AboutUs />} />
+          <Route path='/contact' element={<HomePage />} />
+          <Route path='/login' element={<SignUpPage />} />
+
         </Routes>
 
       </BrowserRouter>

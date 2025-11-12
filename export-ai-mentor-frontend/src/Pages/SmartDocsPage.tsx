@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Header from "../Header/Header";
-import Footer from "../LandingPage/Footer";
-import SmartDocsCards from "../SmartDocs/SmartDocsCards";
-import DocumentPreview from "../SmartDocs/DocumentPreview";
-import Commercial_Invoice from "../SmartDocs/Commercial_Invoice";
-import CertificateOfOrigin from "../SmartDocs/CertificateOfOrigin";
-import PhytosanitaryCertificate from "../SmartDocs/PhytosanitaryCertificate";
+import SmartDocsCards from "../Components/SmartDocs/SmartDocsCards";
+import DocumentPreview from "../Components/SmartDocs/DocumentPreview";
+import Commercial_Invoice from "../Components/SmartDocs/Commercial_Invoice";
+import CertificateOfOrigin from "../Components/SmartDocs/CertificateOfOrigin";
+import PhytosanitaryCertificate from "../Components/SmartDocs/PhytosanitaryCertificate";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/LandingPage/Footer";
 
 const SmartDocsPage = () => {
   const [selectedDoc, setSelectedDoc] = useState<string | null>(null);
