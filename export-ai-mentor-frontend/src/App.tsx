@@ -2,12 +2,15 @@ import './App.css'
 import { createTheme, MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
+import '@mantine/notifications/styles.css';
+import { Notifications } from '@mantine/notifications';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import BuyerVerificationPage from './Pages/BuyerVerificationPage';
 import SmartDocsPage from './Pages/SmartDocsPage';
 import SignUpPage from './Pages/SignUpPage';
 import AboutUs from './Pages/aboutUs';
+import ProfilePage from './Pages/ProfilePage';
 
 
 
@@ -32,6 +35,7 @@ function App() {
   })
   return (
     <MantineProvider theme={theme}>
+       <Notifications position='top-center' zIndex={1000}/>
       <BrowserRouter>
         
         <Routes>
@@ -41,6 +45,7 @@ function App() {
           <Route path='/modules/SmartDocsPage' element={<SmartDocsPage />} />
           <Route path='/home' element={<HomePage />} />
           <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/profile' element={<ProfilePage />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/contact' element={<HomePage />} />
           <Route path='/login' element={<SignUpPage />} />
