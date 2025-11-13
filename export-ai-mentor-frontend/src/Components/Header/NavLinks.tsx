@@ -2,38 +2,15 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavLinks = () => {
   const Links = [
+    
     { name: "Home", url: "/home", identity:"home" },
     { name: "Modules", url: "/modules", identity:"modules" },
     { name: "About Us", url: "/about", identity:"about" },
     { name: "Contact", url: "/contact", identity:"contact" },
+    { name: "SmartDocs", url: "/modules/SmartDocsPage", identity:"SmartDocs" },
     { name: "SignUp", url: "/signup", identity:"signup" }
   ];
   const location=useLocation();
-
-  /*
-  const navigate= useNavigate();
-
-    useEffect(() => {
-    if (location.state?.scrollTo) {
-      const section = document.getElementById(location.state.scrollTo);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
-  const handleClick = (link: any) => {
-    if (location.pathname === link.url) {
-      // same page → just scroll
-      scrollToSection(link.identity);
-    } else {
-      // different page → navigate with state
-      navigate(link.url, { state: { scrollTo: link.identity } });
-    }
-  };
-  
-  */
-
 
   const scrollToSection = (identity: string) => {
     const section = document.getElementById(identity);

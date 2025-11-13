@@ -5,9 +5,11 @@ import '@mantine/carousel/styles.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import BuyerVerificationPage from './Pages/BuyerVerificationPage';
-import AboutUs from './Pages/aboutUs';
+import SmartDocsPage from './Pages/SmartDocsPage';
 import SignUpPage from './Pages/SignUpPage';
-import ProfilePage from './Pages/ProfilePage';
+import AboutUs from './Pages/aboutUs';
+
+
 
 
 function App() {
@@ -36,10 +38,13 @@ function App() {
           <Route path='*' element={<HomePage />} />
           <Route path='/modules' element={<HomePage />} />
           <Route path='/modules/BuyerVerificationPage' element={<BuyerVerificationPage />} />
-          <Route path='/about' element={<AboutUs/>} />
-          <Route path='/signup' element={<SignUpPage/>} />
-          <Route path='/login' element={<SignUpPage/>} />
-           <Route path='/profile' element={<ProfilePage/>} />
+          <Route path='/modules/SmartDocsPage' element={<SmartDocsPage />} />
+          <Route path='/home' element={<HomePage />} />
+          <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/about' element={<AboutUs />} />
+          <Route path='/contact' element={<HomePage />} />
+          <Route path='/login' element={<SignUpPage />} />
+
         </Routes>
 
       </BrowserRouter>
