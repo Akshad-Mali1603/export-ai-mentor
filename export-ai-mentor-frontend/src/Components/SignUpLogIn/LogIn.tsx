@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { loginUser } from "../../Services/UserService";
 import loginValidation from "../../Services/FormValidation";
 import { notifications } from "@mantine/notifications";
+import { useDisclosure } from "@mantine/hooks";
+import ResetPassword from "./ResetPassword";
 
 
 const form = {
@@ -16,7 +18,7 @@ const LogIn = () => {
     const [formError, setFormError] = useState<{ [key: string]: string }>(form);
     const navigate = useNavigate();
     const [data, setData] = useState<{ [key: string]: string }>(form);
-
+  const [opened, { open, close }] = useDisclosure(false);
     const handleChange = (event: any) => {
         setFormError({ ...formError, [event.target.name]: ""});
         setData({ ...data, [event.target.name]: event.target.value });
@@ -106,6 +108,8 @@ const LogIn = () => {
             />
             <Button onClick={handleSubmit} autoContrast variant="filled" className="!bg-slate-950 hover:!bg-slate-700 !shadow-2xl !shadow-slate-950 hover:translate-y-2 transition duration-300 ease-in-out">Log In</Button>
             <div className="mx-auto font-semibold text-slate-700">Don't have an Account ?<span onClick={()=>{navigate("/signup"); setData(form),setFormError(form)}} className="text-slate-700 font-bold cursor-pointer">Sign Up</span></div>
+            <div onClick={open} className="text-slate-700 hover:underline cursor-pointer text-center">Forget Password ?</div>
+            <ResetPassword opened={opened} close={close} />
         </div>
     )
 }
